@@ -1,0 +1,24 @@
+{
+  "name": "polymer_webpage",
+  "homepage": "https://github.com/suzp1984/polymer_webpage",
+  "authors": [
+    "suzp1984 <suzp1984@gmail.com>"
+  ],
+  "description": "my webpage by polymer",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.4.0"
+  }
+}

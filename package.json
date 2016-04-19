@@ -1,0 +1,19 @@
+{
+  "name": "polymer_webpage",
+  "version": "1.0.0",
+  "description": "polymer webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzp1984/polymer_webpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suzp1984/polymer_webpage/issues"
+  },
+  "homepage": "https://github.com/suzp1984/polymer_webpage#readme"
+}
