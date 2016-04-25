@@ -11,16 +11,62 @@
       <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
       <link rel="import" href="elements/elements.html">
+
+      <style is="custom-style" include="iron-flex"></style>
       
   </head>
   
-  <body>
-    <header>
-    </header>
+  <body class="fullbleed vertical layout">
+
+    <paper-drawer-panel class="flex">
+      <paper-header-panel drawer>
+        <paper-toolbar class="medium-tall">
+          <div>Application</div>
+        </paper-toolbar>
+        <div>
+          Drawer Content...
+        </div>
+      </paper-header-panel>
+
+      <paper-scroll-header-panel condenses keep-condensed-header main>
+
+        <paper-toolbar class="medium-tall">
+
+          <paper-icon-button id="navicon" icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
+          <paper-icon-button id="morebutton" icon="more-vert"></paper-icon-button>
+          
+          <span class="middle middle-container flex">Title</span>
+
+          <paper-tabs class="bottom bottom-container fit" selected="0">
+            <paper-tab>One</paper-tab>
+            <paper-tab>Two</paper-tab>
+          </paper-tabs>
+        </paper-toolbar>
+        
+        <div class="content fit">
+          Main Content...
+          
+        </div>
+
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
+
+<!--    
     <paper-material elevation="1">
       <h1>Hello Wrold</h1>
       ... content ...
     </paper-material>
+
+    <input is="my-input">
+
+    <div class="layout horizontal">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      
+    </div>
+-->
 
   </body>
 </html>

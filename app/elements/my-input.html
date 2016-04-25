@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<script>
+  // register a new element called proto-element
+  Polymer({
+    is: "my-input",
+    extends: 'input',
+    created: function() {
+  this.style.border = '1px solid red';
+  console.log(this.localName + "#" + this.id + " was created");
+  },
+
+  ready: function() {
+  console.log(this.localName + '#' + this.id + " has local DOM initialized");
+  },
+
+  factoryImpl: function() {
+  console.log(this.localName + '#' + this.id + " has factoryImpl custom initialization");
+  },
+  
+  attached: function() {
+  console.log(this.localName + '#' + this.id + " has attached");
+  },
+
+  detached: function() {
+  console.log(this.localName + '#' + this.id + " has detached");
+  },
+
+  attributeChanged: function(name, type) {
+  console.log(this.localName + '#' + this.id + " attribute " + name + " was changed to " + this.getAttribute(name));
+  }
+  
+  });
+</script>
